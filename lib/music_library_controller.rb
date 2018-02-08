@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+# require_relative '../config/environment'
+# require 'pry'
+>>>>>>> b8a2a754f7f9f5c071a253e8738474d0e0e937bd
 class MusicLibraryController
   
   def initialize(path="./db/mp3s")
@@ -5,17 +10,30 @@ class MusicLibraryController
   end
   
   def call
+<<<<<<< HEAD
+=======
+    messages
+>>>>>>> b8a2a754f7f9f5c071a253e8738474d0e0e937bd
     user_input = ""
       while user_input != "exit"
         messages
         user_input = gets.strip
         case user_input
+<<<<<<< HEAD
         when 'list songs';   list_songs
         when 'list artists'; list_artists
         when 'list genres';  list_genres
         when 'list artist';  list_songs_by_artist
         when 'list genre';   list_songs_by_genre
         when 'play song';    play_song
+=======
+        when 'list songs',   list_songs
+        when 'list artists', list_artists
+        when 'list genres',  list_genres
+        when 'list artist',  list_songs_by_artist
+        when 'list genre',   list_songs_by_genre
+        when 'play song',    play_song
+>>>>>>> b8a2a754f7f9f5c071a253e8738474d0e0e937bd
         end
       end
   end
